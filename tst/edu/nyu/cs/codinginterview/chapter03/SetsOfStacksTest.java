@@ -45,8 +45,7 @@ public class SetsOfStacksTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testSetsOfStacksIntWithNegativeCapacity() {
-        @SuppressWarnings("unused")
-        SetsOfStacks<Integer> s = new SetsOfStacks<Integer>(-7);
+        new SetsOfStacks<Integer>(-7);
     }
     
     /**
@@ -54,8 +53,7 @@ public class SetsOfStacksTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testSetsOfStacksIntWithZeroCapacity() {
-        @SuppressWarnings("unused")
-        SetsOfStacks<Integer> s = new SetsOfStacks<Integer>(0);
+        new SetsOfStacks<Integer>(0);
     }
     
     /**

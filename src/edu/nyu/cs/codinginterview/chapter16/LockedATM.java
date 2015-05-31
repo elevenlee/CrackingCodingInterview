@@ -22,8 +22,9 @@ public class LockedATM {
             balance = temp;
         } catch (InterruptedException e) {
             
+        } finally {
+            lock.unlock();
         }
-        lock.unlock();
         return temp;
     }
     
@@ -37,8 +38,9 @@ public class LockedATM {
             balance = temp;
         } catch (InterruptedException e) {
             
+        } finally {
+            lock.unlock();
         }
-        lock.unlock();
         return temp;
     }
 

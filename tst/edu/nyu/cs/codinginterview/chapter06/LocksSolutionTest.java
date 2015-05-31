@@ -11,8 +11,7 @@ public class LocksSolutionTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testLocksSolutionWithNegativeN() {
-        @SuppressWarnings("unused")
-        LocksSolution s = new LocksSolution(-4);
+        new LocksSolution(-4);
     }
     
     /**
@@ -20,8 +19,7 @@ public class LocksSolutionTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testLocksSolutionWithZeroN() {
-        @SuppressWarnings("unused")
-        LocksSolution s = new LocksSolution(0);
+        new LocksSolution(0);
     }
     
     /**
@@ -29,8 +27,7 @@ public class LocksSolutionTest {
      */
     @Test
     public void testLocksSolution() {
-        @SuppressWarnings("unused")
-        LocksSolution s = new LocksSolution(5);
+        new LocksSolution(5);
     }
 
     /**

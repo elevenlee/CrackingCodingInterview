@@ -89,7 +89,7 @@ public class PalindromeLinkedListSolution<E> implements Iterable<E> {
         Stack<E> stack = new Stack<E>();
         int size = 0;
         while (fastRunner != null) {
-            if (size % 2 == 1) {
+            if (size % 2 != 0) {
                 stack.push(slowRunner.key);
                 slowRunner = slowRunner.next;
             }

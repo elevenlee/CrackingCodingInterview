@@ -32,8 +32,7 @@ public class CircularArrayTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testCircularArrayWithNegativeSize() {
-        @SuppressWarnings("unused")
-        CircularArray<Integer> circularArray = new CircularArray<Integer>(-5);
+        new CircularArray<Integer>(-5);
     }
     
     /**
@@ -41,8 +40,7 @@ public class CircularArrayTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testCircularArrayWithZeroSize() {
-        @SuppressWarnings("unused")
-        CircularArray<Boolean> circularArray = new CircularArray<Boolean>(0);
+        new CircularArray<Boolean>(0);
     }
     
     /**
@@ -50,8 +48,7 @@ public class CircularArrayTest {
      */
     @Test
     public void testCircularArray() {
-        @SuppressWarnings("unused")
-        CircularArray<Double> circularArray = new CircularArray<Double>(8);
+        new CircularArray<Double>(8);
     }
 
     /**

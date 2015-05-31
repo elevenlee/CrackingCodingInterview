@@ -37,8 +37,7 @@ public class StackFullTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testStackFullWithNegativeCapacity() {
-        @SuppressWarnings("unused")
-        StackFull<Integer> s = new StackFull<Integer>(-3);
+        new StackFull<Integer>(-3);
     }
     
     /**
@@ -46,8 +45,7 @@ public class StackFullTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testStackFullWithZeroCapacity() {
-        @SuppressWarnings("unused")
-        StackFull<Integer> s = new StackFull<Integer>(0);
+        new StackFull<Integer>(0);
     }
     
     /**

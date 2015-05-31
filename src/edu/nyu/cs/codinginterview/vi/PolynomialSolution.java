@@ -62,7 +62,7 @@ public class PolynomialSolution {
                 result.add(pt1[i]);
             }
         }
-        return (PolynomialTerms[]) result.toArray();
+        return result.toArray(new PolynomialTerms[result.size()]);
     }
     
 }
